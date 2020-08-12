@@ -18,7 +18,7 @@ let isChar = (c) => {
   const supportedChars = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
 
   for (const supportedChar of supportedChars) {
-    if (c == supportedChar) {
+    if (c === supportedChar) {
       return true;
     }
   }
@@ -27,10 +27,10 @@ let isChar = (c) => {
 };
 
 let isOperator = (c) => {
-  const supportedOpeators = ["(", ")", ","];
+  const supportedOpeators = ["(", ")", ",", "=", "{", "}", ";"];
 
   for (const supportedOperator of supportedOpeators) {
-    if (c == supportedOperator) {
+    if (c === supportedOperator) {
       return true;
     }
   }

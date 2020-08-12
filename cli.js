@@ -11,7 +11,7 @@ function getInput() {
     if (input == "exit") {
       process.exit(0);
     } else {
-      console.log(interpreter(input));
+      console.log(" %j", interpreter(input));
       getInput();
     }
   });

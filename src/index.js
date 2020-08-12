@@ -1,7 +1,9 @@
 const lexer = require("./lexer.js");
+const parser = require("./parser.js");
 
 let interpreter = (input) => {
-  let output = lexer(input); 
+  let lexList = lexer(input);
+  let output = parser(lexList);
   return output;
 }
 
